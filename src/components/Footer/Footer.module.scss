@@ -1,0 +1,22 @@
+/* Footer.module.scss */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: black;
+  text-align: center;
+}
+
+.logo {
+  width: 122px;  /* Largeur spécifiée */
+  height: 39.44px;  /* Hauteur spécifiée */
+  
+}
+
+p {
+  font-size: 14px;
+  color:white;
+}
+
