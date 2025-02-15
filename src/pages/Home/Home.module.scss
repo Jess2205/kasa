@@ -1,0 +1,52 @@
+.home {
+  width: 100%;
+  max-width: 1240px; // Largeur max pour desktop, ajustée
+  min-height: 1095px; // Hauteur minimale pour s'adapter mieux sur différents écrans
+  margin: 0 auto;
+  padding: 30px 100px; // Espaces sur les côtés
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gridGallery {
+  width: 100%;
+  max-width: 1240px; // Ajout d'un max-width pour la grille
+  height: auto; // Retrait de la hauteur fixe pour une meilleure flexibilité
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; // Répartition uniforme des cartes
+  gap: 30px;
+  padding: 30px 0px;
+  border-radius: 25px;
+  background: #f6f6f6;
+
+  /* Responsive */
+  @media (max-width: 1024px) {
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+}
+
+.card {
+  width: calc(33.33% - 20px); // Trois cartes par ligne sur grand écran
+  max-width: 380px; // Limite la largeur maximale des cartes
+  box-sizing: border-box; // Assure que les marges sont prises en compte dans la largeur
+
+  @media (max-width: 1024px) {
+    width: calc(50% - 15px); // Deux cartes par ligne sur tablette
+  }
+
+  @media (max-width: 768px) {
+    width: 100%; // Une carte par ligne sur mobile
+  }
+}
