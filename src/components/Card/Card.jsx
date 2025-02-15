@@ -4,7 +4,11 @@ import styles from "./Card.module.scss";
 const Card = ({ title, image }) => {
   return (
     <div className={styles.card}>
-      <img src={image} alt={title} className={styles.image} />
+      {/* Affichage de l'image de couverture comme arrière-plan */}
+      <div
+        className={styles.image}
+        style={{ backgroundImage: `url(${image})` }}
+      />
       <h3 className={styles.title}>{title}</h3>
     </div>
   );
