@@ -1,0 +1,9 @@
+@import "variables"; // Variables globales (couleurs, tailles, fonts...)
+@import "mixins"; // Fonctions réutilisables
+@import "global"; // Styles généraux (body, reset CSS, etc.)
+
+// Importation des styles des composants (optionnel)
+@import "../components/Header/Header.module.scss";
+@import "../components/Footer/Footer.module.scss";
+@import "../components/Banner/Banner.module.scss";
+@import "../components/Gallery/Gallery.module.scss";
