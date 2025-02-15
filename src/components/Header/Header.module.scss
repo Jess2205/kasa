@@ -1,0 +1,14 @@
+/* Header.module.scss */
+
+.header {
+  width: 1240px;
+  display: flex;
+  justify-content: space-between; /* Espacement entre le logo et la navbar */
+  align-items: center; /* Centrer verticalement les éléments */
+  padding: 30px 100px;
+}
+
+.logo {
+  width: 120px; /* Ajuste la taille du logo selon tes besoins */
+  height: auto;
+}

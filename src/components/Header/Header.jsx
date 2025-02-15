@@ -1,13 +1,15 @@
-// src/components/Header.jsx
-import { Link } from "react-router-dom";
+import Navbar from "../Navbar/Navbar";
+import styles from "./Header.module.scss";
+import logo from "/Logo-Header.png"; // Importation de l'image du logo
 
 const Header = () => {
   return (
-    <header>
-      <nav>
-        <Link to="/">Accueil</Link>
-        <Link to="/logement/1">Logement 1</Link>
-      </nav>
+    <header className={styles.header}>
+      {/* Logo */}
+      <img src={logo} alt="Logo de Kasa" className={styles.logo} />
+
+      {/* Barre de navigation */}
+      <Navbar />
     </header>
   );
 };
