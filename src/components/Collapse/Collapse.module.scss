@@ -1,0 +1,57 @@
+.collapseItem {
+  margin-bottom: 10px;
+  width: 1023px;
+  align-items: center;
+  justify-content: center;
+  padding-left: 100px;
+  border-radius: 5px;
+  overflow: hidden; /* Cache le contenu en dehors du collapse */
+}
+
+.collapseHeader {
+  background-color: #FF6060;
+  border-radius: 5px;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-family: Montserrat;
+  font-size: 24px;
+  padding: 15px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.collapseContent {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #fafafa;
+  font-family: Montserrat;
+  font-size: 24px;
+  display: block;
+  overflow: hidden;
+  max-height: 0; /* Initialement, le contenu est masqué */
+  opacity: 0; /* Masque aussi l'élément avec une transition d'opacité */
+  transition: max-height 0.3s ease, opacity 0.3s ease; /* Animation de la hauteur et de l'opacité */
+}
+
+.collapseItem.open .collapseContent {
+  max-height: 200px; /* Ajuste en fonction du contenu */
+  opacity: 1;
+}
+
+.arrowBack {
+  width: 15px;
+  height: 15px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  transition: transform 0.3s ease;
+}
+
+.collapseItem.open .arrowBack {
+  transform: rotate(-135deg); /* Rotation de l'icône lorsque le collapse est ouvert */
+}
