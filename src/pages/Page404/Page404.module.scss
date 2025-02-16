@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  
   text-align: center;
   background-color: #f4f4f4;
   color:#FF6060;
@@ -12,14 +12,16 @@
 
 h1 {
   font-size: 288px;
-  margin-bottom: 20px;
+  
    
 }
 
-p {
+span {
   font-size: 36px;
-  margin-bottom: 30px;
-  color:#FF6060 ;
+  margin-bottom: 10px;
+  color: #FF6060;
+  
+  
 }
 
 
