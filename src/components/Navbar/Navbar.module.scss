@@ -1,9 +1,18 @@
 .navbar {
   display: flex;
   gap: 20px;
+
+  @media (max-width: 375px) {
+    gap: 10px; /* Réduit l’espacement entre les liens */
+  }
 }
 
 a {
   text-decoration: none;
   color: black;
+  font-size: 18px;
+
+  @media (max-width: 375px) {
+    font-size: 14px; /* Réduit la taille des liens */
+  }
 }
