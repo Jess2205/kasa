@@ -8,6 +8,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (max-width: 768px) {
+    padding: 0; /* Supprime les marges latérales */
+  }
 }
 
 .gridGallery {
@@ -33,7 +37,7 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    padding: 20px;
+    padding: 0;
   }
 }
 
