@@ -8,18 +8,18 @@
   overflow: hidden; /* Cache le contenu en dehors du collapse */
 }
 
+
 .collapseHeader {
   background-color: #FF6060;
   border-radius: 5px;
   color: #FFFFFF;
   font-weight: bold;
-  font-family: Montserrat;
-  font-size: 24px;
-  padding: 15px;
+  padding: 10px;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-right: 20px;
   
 }
 
@@ -27,8 +27,7 @@
   padding: 10px;
   border-radius: 5px;
   background-color: #fafafa;
-  font-family: Montserrat;
-  font-size: 24px;
+  font-size: 18px;
   display: block;
   overflow: hidden;
   max-height: 0; /* Initialement, le contenu est masqué */
@@ -42,14 +41,14 @@
 }
 
 .arrowBack {
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
   border: solid white;
   border-width: 0 3px 3px 0;
   display: inline-block;
-  padding: 3px;
   transform: rotate(45deg);
   transition: transform 0.3s ease;
+
 }
 
 .collapseItem.open .arrowBack {
