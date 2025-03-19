@@ -5,7 +5,7 @@ export function Page404() {
   return (
     <div className={styles.notFoundContainer}>
       <h1>404</h1>
-      <span>Oups! La page que vous demandez n&apos;existe pas.</span>
+      <h2>Oups! La page que vous demandez n&apos;existe pas.</h2>
       <Link to="/">Retour sur la page d&apos;accueil</Link>
     </div>
   );
