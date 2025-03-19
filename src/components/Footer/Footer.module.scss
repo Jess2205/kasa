@@ -1,22 +1,47 @@
-/* Footer.module.scss */
-
 .footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
-  background-color: black;
+  justify-content: center; /* Centrage vertical */
   text-align: center;
+  background-color: black;
+  height: 209px; /* Hauteur fixe pour desktop */
+  width: 100vw;
+  max-width: 100%;
+  padding: 20px;
+  gap: 15px; /* Espacement entre les éléments */
+  position: relative;
+
+  @media (max-width: 1024px) {
+    width: 100%; /* ✅ S'assurer que le footer couvre tout l'écran */
+  }
 }
 
 .logo {
-  width: 122px;  /* Largeur spécifiée */
-  height: 39.44px;  /* Hauteur spécifiée */
-  
+  width: 122px;
+  height: 39.44px;
 }
 
 p {
   font-size: 14px;
-  color:white;
+  color: white;
+  max-width: 90%; /* Empêche le texte de s’étendre trop */
 }
 
+/* ✅ Responsive pour mobile ≤ 375px */
+@media (max-width: 375px) {
+  .footer {
+    height: auto; /* Adaptation au contenu */
+    padding: 15px 10px; /* Moins d’espace pour un meilleur rendu */
+    gap: 10px;
+  }
+
+  .logo {
+    width: 90px; /* Réduction du logo */
+    height: auto;
+  }
+
+  p {
+    font-size: 12px; /* Texte plus petit */
+  }
+}
