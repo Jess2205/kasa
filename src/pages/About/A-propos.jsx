@@ -8,7 +8,7 @@ const APropos = () => {
       {/* Utilisation du composant Banner */}
       <Banner 
         image="src/assets/Images/banner-about.png" 
-        title="À propos de Kasa" 
+        
       />
       
       <div className={styles.content}>
